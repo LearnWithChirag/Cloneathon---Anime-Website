@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.main-container{
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/mask.jpg);
+    background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay{
+    position: absolute;
+    z-index: 2;
+    /* background-image: url(Images/img.jpeg); */
+    background-size: cover;
+    /* backface-visibility: .5rem; */
+    width: 100%;
+    height: 100vh;
+}
+
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: black;
+    color: white;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.left ul{
+    display: flex;
+    gap: 1rem;
+    color: rgb(255, 255, 255, .4);
+}
+
+.left ul li{
+    list-style: none;;
+    cursor: pointer;
+}
+
+.right input{
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.right input:last-child{
+    border: .1rem  solid green;
+    background-color: black;
+    color: green;
+}
+
+.home-footer{
+    border-bottom: .1rem solid rgb(189, 171, 171, .4);
+    padding: 1rem 0;
+}
+
+.home-footer h1{
+    color: white;
+    /* border-bottom: .1rem solid black; */
+}
+
+.home{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Featured page */
+
+.featured , .manga , .character{
+    width: 100%;
+    /* position: absolute; */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-cards{
+    width: 100%;
+    display: flex;
+    margin: 4rem 0;
+    justify-content: space-evenly;
+}
+
+.card{
+    background-color: rgba(192, 192, 192, 0.127);
+    border-radius: .5rem;
+    width: 20rem;
+    transition: .5s ease-in-out;
+}
+
+.card-img img{
+    width: 20rem;
+}
+
+.featured-head{
+    margin-top: 4rem;
+    color: white;
+}
+
+.content{
+    color: white;
+    padding: .5rem;
+}
+
+.card:hover{
+    /* transform: translateY(-2rem); */
+    transform: scale(1.1);
+
+}
+
+.latest{
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0 6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container{
+    display: flex;
+    gap: 3rem;
+}
+
+.video-content-p{
+    margin-top: 1rem;
+}
+
+.video-content p{
+    font-size: .8rem;
+
+}
+
+.video-head-t{
+    margin-top: 1.5rem;
+}
+
+.manga{
+    margin-top: 5rem;
+}
+
+.character-head{
+    margin: 2rem 0;
+}
+
+.character-folder{
+    display: flex;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+.character-folder img{
+    width: 10rem;
+    height: 20rem;
+    transform: skewX(-15deg);
+    box-shadow: 0 0 .5rem white;
+}
+
+.footer{
+    background-image: url(Images/footer.jpg);
+    width: 100%;
+    height: 15rem;
+}
